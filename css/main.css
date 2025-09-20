@@ -1,0 +1,45 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004080;
+  padding: 10px 20px;
+  color: white;
+}
+header img {
+  height: 50px;
+}
+nav, main, aside, footer {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0077cc;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #777;
+  padding: 8px;
+  text-align: center;
+}
+caption {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.highlight {
+  color: darkred;
+} */

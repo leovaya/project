@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вишгородська адміністрація - Зворотній зв’язок</title>
+</head>
+<body>
+
+        <header style="background-color:#dde6f2a3;">
+    <img src="/img/gerb.png" alt="Логотип адміністрації" width="80">
+
+    <br><br>
+    <h3 >Вишгородська районна державна адміністрація</h1>
+    <h2>Зворотній зв’язок</h2>
+</header>
+    <main>
+         <a href="index.html" class="btn">← На головну сторінку</a>
+
+        <h3>Форма зворотнього зв’язку</h3>
+        <form>
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                
+                <label for="name">Прізвище та ім’я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Вік:</label>
+                <input type="number" id="age" name="age" min="14" max="120">
+
+                <label for="education">Освіта:</label>
+                <select id="education" name="education">
+                <option value="повна">Повна</option>
+                <option value="неповна">Неповна</option>
+                <option value="вища">Вища</option>
+                <option value="професійна">Професійна</option>
+                </select>
+            </fieldset>
+
+        <br><br>
+        <hr>
+        <label for="purpose">Мета зворотнього зв’язку:</label>
+        <select id="purpose" name="purpose">
+            <option value="співпраця">Співпраця</option>
+            <option value="скарга">Скарга на порушення права власності</option>
+            <option value="пропозиція">Пропозиція</option>
+            <option value="помилка">Наявність помилки</option>
+        </select>
+
+        <br><br>
+        <label for="details">Детально:</label>
+        <textarea id="details" name="details" rows="6" cols="50" maxlength="500" placeholder="Введіть повідомлення (до 500 символів)..."></textarea>
+
+        <br><br>
+        <div class="checkbox">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Я погоджуюсь на обробку моїх персональних даних</label>
+        </div>
+
+        <br><br>
+        <div align="center">
+            <button type="submit">Відправити</button>
+             <button type="reset">Очистити</button>
+        </div>
+        
+        </form>
+    </main>
+
+  <br><br>
+    <footer>
+        <div style="text-align:center">
+            <h3>Контакти</h3>
+            <p>Адреса: м. Вишгород, вул. Київська, 1</p>
+            <p>Телефон: (04596) 22-111</p>
+            
+            <a href="#cabinet">Перейти у власний кабінет</a>
+            <a href="#register">Зареєструватись</a>
+
+
+            <p>&copy; 2025 Вишгородська районна державна адміністрація</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
