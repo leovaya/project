@@ -105,6 +105,8 @@
 
     .form-button[type="submit"]:hover {
       background-color: #244a9c;
+      color: #660a0a;
+      font-size: 30px;
     }
 
     .form-button[type="reset"] {

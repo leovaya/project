@@ -34,10 +34,20 @@ body {
 }
 
 /* ---------------------MAIN */
-main {
+/* main {
   margin-top: 160px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+} */
+ /* ---------------------MAIN */
+main {
+  margin-top: 160px;
+  display: grid;                     /* grid замість flex */
+  grid-template-columns: 1fr;        /* одна колонка */
   gap: 40px;
   max-width: 1200px;
   width: 100%;
@@ -59,9 +69,15 @@ main {
 }
 
 /* -----------Секція з напрямками */
-.direction {
+/* .direction {
   display: flex; 
   gap: 25px;
+  width: 100%;
+} */
+ .direction {
+  display: grid;             
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 90px;
   width: 100%;
 }
 
@@ -84,7 +100,7 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
-.card img {
+.card img[alt] {
   transition: opacity 0.5s ease;
 }
 .card img:hover {
@@ -117,7 +133,7 @@ li:has(> ul) {
   color: #c0392b;
 }
 
-img {
+img[src*="img"] {
   max-width: 80px;
 }
 /* Стилі для посилань */
