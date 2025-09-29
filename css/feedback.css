@@ -1,0 +1,145 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f8fc;
+      color: #333;
+    }
+
+    /* ----------------Шапка */
+    .header {
+      background-color: #dde6f2;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .header img {
+      flex-shrink: 0;
+      margin-right: 20px;
+      
+    }
+
+    .header h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #1e3d7a;
+    }
+
+    /* --------------Основний блок */
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    main h2 {
+      text-align: center;
+      color: #1e3d7a;
+    }
+
+    /* -------------------Форма */
+    .form-container {
+      display: flex;
+
+      flex-flow: column wrap;
+      gap: 15px;
+    }
+
+    .form-fieldset {
+      border: 2px solid #a8c4f5;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .form-legend {
+      color: #1e3d7a;
+      font-weight: bold;
+    }
+
+    .form-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-input, 
+    .form-select, 
+    .form-textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .form-input:focus, 
+    .form-select:focus, 
+    .form-textarea:focus {
+      border-color: #1e3d7a;
+      /* outline: none; */
+    }
+
+    /* ---------------------Кнопки */
+    .form-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .form-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form-button[type="submit"] {
+      background-color: #1e3d7a;
+      color: #fff;
+    }
+
+    .form-button[type="submit"]:hover {
+      background-color: #244a9c;
+    }
+
+    .form-button[type="reset"] {
+      background-color: #ccc;
+      color: #333;
+    }
+
+    .form-button[type="reset"]:hover {
+      background-color: #999;
+      color: #fff;
+    }
+
+    /* ------------------Футер */
+    .footer-content{
+  width: 100%;
+  text-align: center;
+  background: rgb(236, 240, 241);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.a_link:link {
+  color: darkgreen; /* темно-зелений колір для ще не відвіданих посилань */
+}
+
+.a_link:visited {
+  color: #48c4e3; /* залишаємо синім або можна теж змінити */
+}
+
+.a_link:hover {
+  color: #c0392b; /* при наведенні */
+}
+
+.a_link{
+  text-decoration: none;
+  transition: color 0.3s;
+}

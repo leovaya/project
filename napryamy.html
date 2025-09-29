@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вишгородська адміністрація - напрямки діяальності</title>
-    <style>
-        .direction {
-            /* in one line */
-            display: flex; 
-            gap: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/napryamy.css">
+
 </head>
 <body>
-<header style="background-color:#dde6f2a3;">
-    <img src="/img/gerb.png" alt="Логотип адміністрації" width="80">
-
-    <br><br>
-    <h3 >Вишгородська районна державна адміністрація</h1>
-    <h2>Напрями діяльності</h2>
+<header class="header">
+    <img src="/img/gerb.png" alt="Логотип адміністрації" >
+    <h1 class="header__title">
+      Вишгородська районна державна адміністрація
+    </h1>
 </header>
 
 
-    <main>
-         <a href="index.html" class="btn">← На головну сторінку</a>
+<main>
+    <h2 class="page-title">Напрями діяльності</h2>
+    <a href="index.html" class="a_link">← На головну сторінку</a>
+    
     <div class="direction">
-        <article>
-            <img src="/img/recession.png" alt="Напрямок 1" width="100">
+        <article class="card">
+            <img src="/img/recession.png" alt="Напрямок 1" >
         <div>
             <h3>Економічний розвиток</h3>
             <p>Підтримка малого та середнього бізнесу, залучення інвестицій, місцеві програми розвитку підприємництва.</p>
@@ -43,8 +39,8 @@
         </div>
         </article>
         
-        <article>
-            <img src="/img/education.png" alt="Напрямок 2" width="100">
+        <article class="card">
+            <img src="/img/education.png" alt="Напрямок 2">
         <div>
             <h3>Освіта</h3>
             <p>Підтримка шкіл і закладів дошкільної освіти, підвищення якості навчання та кваліфікації педпрацівників.</p>
@@ -60,8 +56,8 @@
             </ul>
         </div>
         </article>
-        <article>
-            <img src="/img/healthcare.png" alt="Напрямок 3" width="100">
+        <article class="card">
+            <img src="/img/healthcare.png" alt="Напрямок 3">
             <div>
                 <h3>Охорона здоров'я</h3>
                 <p>Підтримка шкіл і закладів дошкільної освіти, підвищення якості навчання та кваліфікації педпрацівників.</p>
@@ -79,8 +75,8 @@
         </article>
     </div>  
     <div class="direction">
-        <article>
-            <img src="/img/protection.png" alt="Напрямок 4" width="100">
+        <article class="card">
+            <img src="/img/protection.png" alt="Напрямок 4">
         <div>
             <h3>Соціальний захист</h3>
             <p>Підтримка вразливих верств населення, соціальні програми, допомога сім'ям з дітьми, пенсіонерам, людям з інвалідністю.</p>
@@ -97,8 +93,8 @@
         </div>
         </article>
 
-        <article>
-            <img src="/img/infrastructure.png" alt="Напрямок 5" width="100">
+        <article class="card">
+            <img src="/img/infrastructure.png" alt="Напрямок 5" >
         <div>
             <h3>Інфраструктура та ЖКГ</h3>
             <p>Розвиток транспортної, комунальної інфраструктури, покращення житлово-комунальних послуг для мешканців району.</p>
@@ -115,8 +111,8 @@
         </div>
         </article>
 
-        <article>
-            <img src="/img/cultural-diversity.png" alt="Напрямок 6" width="100">
+        <article class="card">
+            <img src="/img/cultural-diversity.png" alt="Напрямок 6" >
         <div>
             <h3>Культура і спорт</h3>
             <p>Підтримка місцевих культурних ініціатив, розвиток спортивної інфраструктури, організація заходів для громади.</p>
@@ -138,14 +134,14 @@
 </main>
 
 <br><br>
-    <footer>
+    <footer class="footer">
         <div style="text-align:center">
             <h3>Контакти</h3>
             <p>Адреса: м. Вишгород, вул. Київська, 1</p>
             <p>Телефон: (04596) 22-111</p>
             
-            <a href="#cabinet">Перейти у власний кабінет</a>
-            <a href="#register">Зареєструватись</a>
+            <a href="#cabinet" class="a_link">Перейти у власний кабінет</a>
+            <a href="#register" class="a_link">Зареєструватись</a>
 
 
             <p>&copy; 2025 Вишгородська районна державна адміністрація</p>

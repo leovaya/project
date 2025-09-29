@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вишгородська адміністрація - Головна</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<header style="background-color:#dde6f2a3;">
-    <img src="/img/gerb.png" alt="Логотип адміністрації" width="80">
+<main>
+<header class="header">
+   <div class="container">
+    <div class="header__wrapper">
+      <img src="/img/gerb.png" alt="Логотип адміністрації" class="header__logo">
 
-    <br><br>
-    <h1 style="text-align:center;">Вишгородська районна державна адміністрація</h1>
+      <h1 class="header__title">
+        Вишгородська районна державна адміністрація
+      </h1>
+
+      <nav class="header__nav">
+        <a href="napryamy.html" class="header__link">Напрями діяльності</a>
+        <a href="feedback.html" class="header__link">Зворотній зв’язок</a>
+      </nav>
+    </div>
+  </div>
 </header>
+
 
     <aside> 
         <h2>Навігація: </h2> 
         <ul> 
-            <li><a href="#about">Про нас</a></li> 
-            <li><a href="#leaders">Керівництво</a></li> 
-            <li><a href="napryamy.html">Напрями діяльності</a></li>
-            <li><a href="feedback.html">Зворотній зв’язок</a></li> </ul> 
+            <li><a href="#about" class="a_link">Про нас</a></li> 
+            <li><a href="#leaders" class="a_link">Керівництво</a></li> 
+            <li><a href="napryamy.html" class="a_link">Напрями діяльності</a></li>
+            <li><a href="feedback.html" class="a_link">Зворотній зв’язок</a></li> </ul> 
     </aside>
 
     <div>
@@ -28,107 +41,108 @@
       <button>Зареєструватись</button>
     </div>
 
-    <main>
         <article id="about">
         <h2>Мета створення установи</h2>
+         <img src="img/vishgorodskiy_rayon-removebg-preview.png" alt="Будівля адміністрації" class="about-img">
         <p>
             Районна адміністрація — це <span style="color:red"><i><b><u><em>важливий орган місцевої влади</em></u></b></i></span>,
             який відповідає за реалізацію державної політики у районі.
         </p>
         <p>Завдання адміністрації:</p>
-        <ol type="a">
+        <ol start="7">
             <li>Забезпечення виконання законодавства України.</li>
             <li>Розвиток соціальної та економічної сфери району.</li>
             <li>Забезпечення прозорості діяльності органів влади.</li>
         </ol>
-    </article>
-
-    <article id="leaders">
+        </article>
         <h2>Керівництво установи</h2>
-        <table border="1">
-
-            <caption><b>Інформація про керівників<b></caption>
-            <thead>
-                <tr>
-                    <th>Прізвище та ініціали</th>
-                    <th>Посада</th>
-                    <th>Досвід</th>
-                    <th colspan="2">Освіта</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">Іваненко І.І.</td>
-                    <td rowspan="2">Голова адміністрації</td>
-                    <td>15 років</td>
-                    <td>КНУ ім. Т. Шевченка</td>
-                    <td>Державне управління</td>
-                </tr>
-                <tr>
-                    <td>Кандидат наук</td>
-                    <td colspan="2">Публічне адміністрування</td>
-                </tr>
-                <tr>
-                    <td>Петренко П.П.</td>
-                    <td>Заступник голови</td>
-                    <td>10 років</td>
-                    <td colspan="2">КНЕУ, Економіка</td>
-                </tr>
-                <tr>
-                    <td>Сидоренко С.С.</td>
-                    <td>Керівник апарату</td>
-                    <td>8 років</td>
-                    <td colspan="2">КНУБА, Менеджмент</td>
-                </tr>
-                <tr>
-                    <td>Коваленко К.К.</td>
-                    <td>Начальник відділу</td>
-                    <td>5 років</td>
-                    <td colspan="2">КПІ, Правознавство</td>
-                </tr>
-                <tr>
-                    <td>Мельник М.М.</td>
-                    <td>Завідувач сектору</td>
-                    <td>3 роки</td>
-                    <td colspan="2">НАДУ, Публічне управління</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td align="center" colspan="5">Дані актуальні станом на 2025 рік</td>
-                </tr>
-            </tfoot>
-        </table>
+     <!-- ===== LEADERS ===== -->
+    <article id="leaders" class="leaders">
+      <h2 class="leaders__title">Керівництво установи</h2>
+      <table class="leaders__table">
+        <caption class="leaders__caption"><b>Інформація про керівників</b></caption>
+        <thead class="leaders__thead">
+          <tr>
+            <th>Прізвище та ініціали</th>
+            <th>Посада</th>
+            <th>Досвід</th>
+            <th colspan="2">Освіта</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Іваненко І.І.</td>
+            <td rowspan="2">Голова адміністрації</td>
+            <td>15 років</td>
+            <td>КНУ ім. Т. Шевченка</td>
+            <td>Державне управління</td>
+          </tr>
+          <tr>
+            <td>Кандидат наук</td>
+            <td colspan="2">Публічне адміністрування</td>
+          </tr>
+          <tr>
+            <td>Петренко П.П.</td>
+            <td>Заступник голови</td>
+            <td>10 років</td>
+            <td colspan="2">КНЕУ, Економіка</td>
+          </tr>
+          <tr>
+            <td>Сидоренко С.С.</td>
+            <td>Керівник апарату</td>
+            <td>8 років</td>
+            <td colspan="2">КНУБА, Менеджмент</td>
+          </tr>
+          <tr>
+            <td>Коваленко К.К.</td>
+            <td>Начальник відділу</td>
+            <td>5 років</td>
+            <td colspan="2">КПІ, Правознавство</td>
+          </tr>
+          <tr>
+            <td>Мельник М.М.</td>
+            <td>Завідувач сектору</td>
+            <td>3 роки</td>
+            <td colspan="2">НАДУ, Публічне управління</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Дані актуальні станом на 2025 рік</td>
+          </tr>
+        </tfoot>
+      </table>
     </article>
+
 
     <aside>
         <h3>Корисні посилання</h3>
         <nav>
             <ul>
-                <li><a href="napryamy.html">Напрями діяльності</a></li>
-                <li><a href="zvorotnyi.html">Зворотній зв’язок</a></li>
-                <li><a href="https://www.kmu.gov.ua" target="_blank">Кабінет Міністрів України</a></li>
-                <li><a href="https://rada.gov.ua" target="_blank">Верховна Рада України</a></li>
+                <li><a href="napryamy.html", class="a_link">Напрями діяльності</a></li>
+                <li><a href="zvorotnyi.html" class="a_link">Зворотній зв’язок</a></li>
+                <li><a href="https://www.kmu.gov.ua" target="_blank" class="a_link">Кабінет Міністрів України</a></li>
+                <li><a href="https://rada.gov.ua" target="_blank" class="a_link">Верховна Рада України</a></li>
             </ul>
         </nav>
     </aside>
 
     
-    </main>
+</main>
 
 
     <br><br>
-    <footer>
-        <div style="text-align:center">
+    <footer class="f_footer ">
+        <div>
             <h3>Контакти</h3>
-            <p>Адреса: м. Вишгород, вул. Київська, 1</p>
-            <p>Телефон: (04596) 22-111</p>
+            <p contenteditable="true">Адреса: м. Вишгород, вул. Київська, 1</p>
+            <p contenteditable="true">Телефон: (04596) 22-111</p>
             
-            <a href="#cabinet">Перейти у власний кабінет</a>
-            <a href="#register">Зареєструватись</a>
+            <a href="#cabinet" class="a_link">Перейти у власний кабінет</a>
+            <a href="#register" class="a_link">Зареєструватись</a>
 
 
-            <p>&copy; 2025 Вишгородська районна державна адміністрація</p>
+            <p contenteditable="true">&copy; 2025 Вишгородська районна державна адміністрація</p>
         </div>
     </footer>
 

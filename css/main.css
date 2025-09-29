@@ -1,45 +1,249 @@
-/* body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* БАЗОВІ СТИЛІ */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #2c3e50;
+
+  display: flex;            
+  flex-direction: column;   
+  align-items: center;       
+  justify-content: flex-start; 
+  padding: 20px;
+  overflow-x: hidden;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #004080;
-  padding: 10px 20px;
-  color: white;
+
+/* -----------------------HEADER  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;  
+  padding: 0 20px; 
+  box-sizing: border-box;
 }
-header img {
-  height: 50px;
-}
-nav, main, aside, footer {
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin: 5px;
-}
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #0077cc;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-table {
-  border-collapse: collapse;
+
+.header {
+  background:  #2c3e50;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-th, td {
-  border: 1px solid #777;
-  padding: 8px;
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between; /* лого зліва, меню справа */
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.header__logo:hover {
+  transform: scale(1.05);
+}
+
+.header__title {
+  flex: 1;               /* займає вільний простір */
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.header__nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px 50px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header__link:hover {
+  background: rgba(255,255,255,0.2);
+  color: #000;
+}
+
+
+header img {
+  margin-right: 20px;
+}
+img[alt] {
+  border-radius: 6px;
+}
+
+
+header h1 {
+  font-size: 28px;
   text-align: center;
 }
-caption {
-  font-weight: bold;
-  margin-bottom: 5px;
+
+/* ------------- NAVIGATION / ASIDE  */
+aside {
+  width: 100%;
+  /* max-width: 1200px; */
+  background: #ecf0f1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
 }
-.highlight {
-  color: darkred;
-} */
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  margin-bottom: 8px;
+}
+/* ---------------Стилі для посилань */
+
+.a_link:link {
+  color: darkgreen; /* темно-зелений колір для ще не відвіданих посилань */
+}
+
+.a_link:visited {
+  color: #48c4e3; /* залишаємо синім або можна теж змінити */
+}
+
+.a_link:hover {
+  color: #c0392b; /* при наведенні */
+}
+
+.a_link{
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+/*---------------- MAIN CONTENT  */
+main {
+  padding-top: 120px; 
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* -----------Блок "Про нас" */
+#about {
+  width: 100%;
+  padding: 20px;
+  max-height: 250px; 
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow-y: auto;
+}
+.about-img {
+    float: right;   
+    margin: 0 0 10px 90px; 
+    width: 100px;  
+    height: auto;
+}
+
+
+#about::before {
+  content: "👋 ";
+  font-size: 20px;
+}
+
+/*--------------LEADERS TABLE */
+.leaders__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.leaders__caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.leaders__thead {
+  background: #2c3e50;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.leaders__table th, 
+.leaders__table td {
+  padding: 15px;
+  text-align: left;
+}
+.leaders__table tbody tr 
+{ border-bottom: 1px solid #ddd; 
+  transition: background 0.3s ease; }
+.leaders__table tbody tr:hover 
+{ background: #eaf3ff; }
+
+#leaders tfoot td { 
+  text-align: center; 
+  font-weight: bold; 
+  padding: 12px; 
+  background-color: #ecf0f1; }
+
+
+/*---------------BUTTONS*/
+button {
+  background-color: #dde6f2a3;
+  color: darkblue;
+  border: 2px solid hsl(240, 100%, 20%); /* navy */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: navy;
+  color: white;
+  box-shadow: 3px 3px 8px gray;
+  font-size: 18px;
+}
+
+/* ----------------FOOTER */
+.f_footer {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  background: rgb(236, 240, 241);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+/* ---------------HOVER / TRANSITIONS */
+#leaders {
+  transition: transform 0.3s;
+}
+
+#leaders:hover {
+  transform: scale(1.05);
+}
+
+footer p:focus {
+  outline: 3px double black;
+  transition: outline 0.3s ease 3s;
+}
