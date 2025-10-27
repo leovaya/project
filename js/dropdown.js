@@ -3,14 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (!navLink) return;
 
-  // Створюємо обгортку та меню
   const wrapper = document.createElement('div');
   wrapper.className = 'dropdown-container';
   
   const menu = document.createElement('div');
   menu.className = 'dropdown-menu';
-
-  // Додаємо пункти меню
   const items = [
     { text: 'Економічний розвиток', href: 'napryamy.html#economic' },
     { text: 'Освіта', href: 'napryamy.html#education' },
@@ -33,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
   wrapper.appendChild(navLink);
   wrapper.appendChild(menu);
 
-  // Логіка показу/приховування
   navLink.addEventListener('click', (e) => {
     e.preventDefault();
     menu.classList.toggle('show');

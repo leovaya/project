@@ -57,8 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function moveSlide(direction) {
     showSlide(currentSlide + direction);
   }
-  
-  // Оновлення індикаторів
+
   function updateIndicators() {
     const indicators = document.querySelectorAll('.indicator');
     
@@ -73,9 +72,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
   window.moveSlide = moveSlide;
   
-});
-
-// Оптимізація при зміні розміру вікна
-window.addEventListener('resize', function() {
-  showSlide(currentSlide);
 });

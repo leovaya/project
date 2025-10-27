@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navMenu = document.getElementById('navMenu');
 
   if (!toggleBtn || !navMenu) {
-    console.warn('⚠️ Кнопка або меню не знайдені');
+    console.warn('Кнопка або меню не знайдені');
     return;
   }
 

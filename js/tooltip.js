@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
   
-  // Створюємо tooltip
   const tooltip = document.createElement('div');
   tooltip.className = 'tooltip';
   tooltip.textContent = 'Вдячні за Ваш час! Конкретизуйте мету звернення, будь ласка';
@@ -24,11 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
     tooltip.style.left = (rect.right + 15) + 'px';
   });
   
-  // При забиранні миші
   detailsField.addEventListener('mouseout', function() {
     this.classList.remove('field-hover');
     tooltip.classList.remove('tooltip-visible');
   });
-  
-  console.log('✅ Tooltip успішно ініціалізовано!');
+
 });

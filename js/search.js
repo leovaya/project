@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!searchInput) return;
   
   let searchTimeout = null;
-  
-  // Пошук при введенні тексту
+
   searchInput.addEventListener('input', function() {
     clearTimeout(searchTimeout);
     
@@ -23,15 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
   });
   
-  // Пошук при натисканні Enter
   searchInput.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
       clearTimeout(searchTimeout);
       search(this.value.trim().toLowerCase());
     }
   });
-  
-  // Основна функція пошуку
+
+
   function search(query) {
     if (!query) {
       showMessage('Введіть назву напряму для пошуку', 'info');
@@ -60,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
-    // Показуємо результат
     if (foundCount > 0) {
       showMessage('Знайдено напрямів: ' + foundCount, 'success');
       setTimeout(function() {
@@ -70,8 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       showMessage('Нічого не знайдено. Спробуйте інший запит.', 'error');
     }
   }
-  
-  // Скидання пошуку
+
   function resetSearch() {
     cards.forEach(function(card) {
       card.classList.remove('hidden', 'highlight');
@@ -79,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
     searchResults.innerHTML = '';
   }
   
-  // Показ повідомлення
   function showMessage(text, type) {
     const msg = document.createElement('div');
     msg.className = 'search-message ' + type;
