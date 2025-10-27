@@ -1,0 +1,54 @@
+/* Стилі для tooltip (підказки) */
+.tooltip {
+  position: fixed;
+  background-color: #1e3d7a;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 250px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
+  
+  /* Ховаємо за замовчуванням */
+  display: none;
+  
+  /* Плавна поява */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Показуємо tooltip */
+.tooltip-visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Стрілочка tooltip */
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #1e3d7a transparent transparent;
+}
+
+/* Стилі для поля при наведенні */
+.field-hover {
+  background-color: #e8f4f8 !important;
+  border: 2px solid #1e3d7a !important;
+  box-shadow: 0 4px 12px rgba(30, 61, 122, 0.3) !important;
+  transition: all 0.3s ease;
+}
+
+/* Альтернатива: можна через псевдоклас :hover (якщо не потрібен JS для стилів) */
+#details:hover {
+  background-color: #e8f4f8;
+  border: 2px solid #1e3d7a;
+  box-shadow: 0 4px 12px rgba(30, 61, 122, 0.3);
+  transition: all 0.3s ease;
+}

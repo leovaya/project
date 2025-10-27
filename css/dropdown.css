@@ -1,0 +1,47 @@
+/* === Випадаюче меню для "Напрями діяльності" === */
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Сам блок випадаючого меню */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  min-width: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 1000;
+  margin-top: 5px;
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Показ меню */
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Посилання в меню */
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Ефект при наведенні */
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-left: 25px;
+}

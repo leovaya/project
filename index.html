@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вишгородська адміністрація - Головна</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/show.css">
+
+    <script src="js/menu.js"></script>
+    <script src="js/dropdown.js"></script>
 </head>
 <body>
 
@@ -18,9 +23,13 @@
         Вишгородська районна державна адміністрація
       </h1>
 
-      <nav class="header__nav">
+      <!-- Кнопка ПОЗА nav -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <!-- Навігаційне меню -->
+      <nav class="header__nav" id="navMenu">
         <a href="napryamy.html" class="header__link">Напрями діяльності</a>
-        <a href="feedback.html" class="header__link">Зворотній зв’язок</a>
+        <a href="feedback.html" class="header__link">Зворотній зв'язок</a>
       </nav>
     </div>
   </div>
